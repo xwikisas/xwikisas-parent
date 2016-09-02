@@ -1,6 +1,6 @@
 Provide various parent pom.xml for XWiki SAS public extensions.
 
-Extensions are automatically release on http://nexus.xwikisas.com if your user have the release right.
+Extensions are automatically released on http://nexus.xwikisas.com if your user have the release right.
 
 # Example
 
