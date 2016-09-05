@@ -37,7 +37,7 @@
   <properties>
   <!-- Disable Nexus plugin -->
   <xwiki.nexus.skipStaging>true</xwiki.nexus.skipStaging>
-  </properties>>
+  </properties>
 
   <!-- All the extensions using this parent should have XWiki SAS as its only developer -->
   <developers>
