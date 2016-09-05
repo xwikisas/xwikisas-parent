@@ -25,7 +25,7 @@
   <parent>
     <groupId>org.xwiki.contrib</groupId>
     <artifactId>parent-platform</artifactId>
-    <version>7.4-7</version>
+    <version>7.4-8</version>
   </parent>
   <groupId>com.xwiki.parent</groupId>
   <artifactId>xwikisas-parent-platform</artifactId>
@@ -33,6 +33,11 @@
   <name>XWiki SAS Extension</name>
   <packaging>pom</packaging>
   <description>XWiki SAS public extension which depends on xwiki-platform</description>
+
+  <properties>
+  <!-- Disable Nexus plugin -->
+  <xwiki.nexus.skipStaging>true</xwiki.nexus.skipStaging>
+  </properties>>
 
   <!-- All the extensions using this parent should have XWiki SAS as its only developer -->
   <developers>
