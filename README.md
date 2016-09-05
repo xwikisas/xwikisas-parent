@@ -10,27 +10,7 @@ For extensions having xwiki-platform dependencies:
   <parent>
     <groupId>com.xwiki.parent</groupId>
     <artifactId>xwikisas-parent-platform</artifactId>
-    <version>7.4.4</version>
-  </parent>
-```
-
-For extensions having xwiki-rendering and xwiki-commons dependencies:
-
-```xml
-  <parent>
-    <groupId>com.xwiki.parent</groupId>
-    <artifactId>xwikisas-parent-rendering</artifactId>
-    <version>7.4.4</version>
-  </parent>
-```
-
-For extensions having xwiki-commons dependencies only:
-
-```xml
-  <parent>
-    <groupId>com.xwiki.parent</groupId>
-    <artifactId>xwikisas-parent-commons</artifactId>
-    <version>7.4.4</version>
+    <version>7.4</version>
   </parent>
 ```
 
