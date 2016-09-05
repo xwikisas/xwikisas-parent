@@ -43,8 +43,6 @@ function set_version_all() {
   echo -e "\033[0;32m    Set version ${VERSION} in all pom files\033[0m"
   echo              "*****************************"
 
-  set_version parent-commons
-  set_version parent-rendering
   set_version parent-platform
 }
 
@@ -77,9 +75,7 @@ function deploy_all() {
   echo              "*****************************"
   echo -e "\033[0;32m    Deploy all pom files\033[0m"
   echo              "*****************************"
-
-  deploy_pom xwikisas-parent-commons
-  deploy_pom xwikisas-parent-rendering
+  
   deploy_pom xwikisas-parent-platform
 }
 
