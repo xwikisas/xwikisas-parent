@@ -43,7 +43,7 @@ function set_version_all() {
   echo -e "\033[0;32m    Set version ${VERSION} in all pom files\033[0m"
   echo              "*****************************"
 
-  set_version parent-platform
+  set_version xwikisas-parent-platform
 }
 
 function commit_all() {
@@ -59,7 +59,7 @@ function tag_all() {
   echo -e "\033[0;32m    Create tag for new version\033[0m"
   echo              "*****************************"
 
-  git tag -m "Tagging ${parent-$VERSION}" parent-${VERSION}
+  git tag -m "Tagging ${parent-$VERSION}" xwikisas-parent-${VERSION}
 }
 
 function deploy_pom() {
@@ -75,7 +75,7 @@ function deploy_all() {
   echo              "*****************************"
   echo -e "\033[0;32m    Deploy all pom files\033[0m"
   echo              "*****************************"
-  
+
   deploy_pom xwikisas-parent-platform
 }
 
