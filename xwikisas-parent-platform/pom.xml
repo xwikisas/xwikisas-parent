@@ -39,7 +39,7 @@
       <!-- Automatically close and release project on Nexus -->
       <plugin>
         <groupId>org.sonatype.plugins</groupId>
-        <artifactId>nexus-release-maven-plugin</artifactId>
+        <artifactId>nexus-staging-maven-plugin</artifactId>
         <version>1.6.7</version>
         <extensions>true</extensions>
         <configuration>
