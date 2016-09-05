@@ -65,7 +65,7 @@
     <url>http://xwiki.com/</url>
   </organization>
 
-  <!-- Standard Maven plugin for XWiki SAS public extension -->
+  <!-- Standard Maven plugin for XWiki SAS public extensions -->
   <distributionManagement>
     <repository>
       <id>xwiki-release</id>
