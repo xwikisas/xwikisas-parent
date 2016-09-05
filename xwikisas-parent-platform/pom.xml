@@ -34,23 +34,6 @@
   <packaging>pom</packaging>
   <description>XWiki SAS public extension which depends on xwiki-platform</description>
 
-  <build>
-    <plugins>
-      <!-- Automatically close and release project on Nexus -->
-      <plugin>
-        <groupId>org.sonatype.plugins</groupId>
-        <artifactId>nexus-staging-maven-plugin</artifactId>
-        <version>1.6.7</version>
-        <extensions>true</extensions>
-        <configuration>
-          <serverId>xwiki-release</serverId>
-          <nexusUrl>https://nexus.xwikisas.com/nexus/</nexusUrl>
-          <autoReleaseAfterClose>${xwiki.nexus.autoReleaseAfterClose}</autoReleaseAfterClose>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
-
   <!-- All the extensions using this parent should have XWiki SAS as its only developer -->
   <developers>
     <developer>
