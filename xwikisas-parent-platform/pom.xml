@@ -51,7 +51,7 @@
     </plugins>
   </build>
 
-  <!-- Make sure the extension don't ends up with xwiki-commons developers -->
+  <!-- All the extensions using this parent should have XWiki SAS as its only developer -->
   <developers>
     <developer>
       <id>xwikisas</id>
@@ -59,13 +59,13 @@
     </developer>
   </developers>
 
-  <!-- Set a more accurate organization -->
+   <!-- All the extensions using this parent should have XWiki SAS as its organization -->
   <organization>
     <name>XWiki SAS</name>
     <url>http://xwiki.com/</url>
   </organization>
 
-  <!-- Standard Maven plugin for contrib extensions -->
+  <!-- Standard Maven plugin for XWiki SAS public extension -->
   <distributionManagement>
     <repository>
       <id>xwiki-release</id>
