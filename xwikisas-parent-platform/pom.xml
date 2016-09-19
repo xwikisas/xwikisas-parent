@@ -29,7 +29,7 @@
   </parent>
   <groupId>com.xwiki.parent</groupId>
   <artifactId>xwikisas-parent-platform</artifactId>
-  <version>7.4</version>
+  <version>7.4-SNAPSHOT</version>
   <name>XWiki SAS Extension</name>
   <packaging>pom</packaging>
   <description>XWiki SAS public extension which depends on xwiki-platform</description>
@@ -37,6 +37,12 @@
   <properties>
   <!-- Disable Nexus plugin -->
   <xwiki.nexus.skipStaging>true</xwiki.nexus.skipStaging>
+  <xwikisas.public.store.releases.id>public-store-releases</xwikisas.public.store.releases.id>
+  <xwikisas.public.store.releases.name>XWiki SAS Public Store Repository for Releases</xwikisas.public.store.releases.name>
+  <xwikisas.public.store.releases.url>https://nexus.xwikisas.com/nexus/content/repositories/public-store-releases/</xwikisas.public.store.releases.url>
+  <xwikisas.public.store.snapshots.id>public-store-snapshots</xwikisas.public.store.snapshots.id>
+  <xwikisas.public.store.snapshots.name>XWiki SAS Public Store Repository for Snapshots</xwikisas.public.store.snapshots.name>
+  <xwikisas.public.store.snapshots.url>https://nexus.xwikisas.com/nexus/content/repositories/public-store-snapshots/</xwikisas.public.store.snapshots.url>
   </properties>
 
   <!-- All the extensions using this parent should have XWiki SAS as its only developer -->
@@ -56,14 +62,63 @@
   <!-- Standard Maven plugin for XWiki SAS public extensions -->
   <distributionManagement>
     <repository>
-      <id>nexus.xwikisas.com-public-store-releases</id>
-      <name>XWiki SAS Public Store Repository for Releases</name>
-      <url>https://nexus.xwikisas.com/nexus/content/repositories/public-store-releases/</url>
+      <id>${xwikisas.public.store.releases.id}</id>
+      <name>${xwikisas.public.store.releases.name}</name>
+      <url>${xwikisas.public.store.releases.url}</url>
     </repository>
     <snapshotRepository>
-      <id>nexus.xwikisas.com-public-store-snapshots</id>
-      <name>XWiki SAS Public Store Repository for Snapshots</name>
-      <url>https://nexus.xwikisas.com/nexus/content/repositories/public-store-snapshots/</url>
+      <id>${xwikisas.public.store.snapshots.id}</id>
+      <name>${xwikisas.public.store.snapshots.name}</name>
+      <url>${xwikisas.public.store.snapshots.url}</url>
     </snapshotRepository>
   </distributionManagement>
+
+  <repositories>
+    <repository>
+      <id>${xwikisas.public.store.releases.id}</id>
+      <name>${xwikisas.public.store.releases.name}</name>
+      <url>${xwikisas.public.store.releases.url}</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots> 
+    </repository>
+    <repository>
+      <id>${xwikisas.public.store.snapshots.id}</id>
+      <name>${xwikisas.public.store.snapshots.name}</name>
+      <url>${xwikisas.public.store.snapshots.url}</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots> 
+    </repository>
+  </repositories>
+  <pluginRepositories>
+    <pluginRepository>
+      <id>${xwikisas.public.store.releases.id}</id>
+      <name>${xwikisas.public.store.releases.name}</name>
+      <url>${xwikisas.public.store.releases.url}</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </pluginRepository>
+    <pluginRepository>
+      <id>${xwikisas.public.store.snapshots.id}</id>
+      <name>${xwikisas.public.store.snapshots.name}</name>
+      <url>${xwikisas.public.store.snapshots.url}</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </pluginRepository>
+  </pluginRepositories>
 </project>
