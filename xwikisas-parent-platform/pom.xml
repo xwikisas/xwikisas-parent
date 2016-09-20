@@ -39,10 +39,10 @@
   <xwiki.nexus.skipStaging>true</xwiki.nexus.skipStaging>
   <xwikisas.public.store.releases.id>public-store-releases</xwikisas.public.store.releases.id>
   <xwikisas.public.store.releases.name>XWiki SAS Public Store Repository for Releases</xwikisas.public.store.releases.name>
-  <xwikisas.public.store.releases.url>https://nexus.xwikisas.com/nexus/content/repositories/public-store-releases/</xwikisas.public.store.releases.url>
+  <xwikisas.public.store.releases.url>https://nexus.xwiki.com/nexus/content/repositories/public-store-releases/</xwikisas.public.store.releases.url>
   <xwikisas.public.store.snapshots.id>public-store-snapshots</xwikisas.public.store.snapshots.id>
   <xwikisas.public.store.snapshots.name>XWiki SAS Public Store Repository for Snapshots</xwikisas.public.store.snapshots.name>
-  <xwikisas.public.store.snapshots.url>https://nexus.xwikisas.com/nexus/content/repositories/public-store-snapshots/</xwikisas.public.store.snapshots.url>
+  <xwikisas.public.store.snapshots.url>https://nexus.xwiki.com/nexus/content/repositories/public-store-snapshots/</xwikisas.public.store.snapshots.url>
   </properties>
 
   <!-- All the extensions using this parent should have XWiki SAS as its only developer -->
