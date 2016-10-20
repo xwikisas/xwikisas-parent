@@ -25,7 +25,7 @@
   <parent>
     <groupId>org.xwiki.contrib</groupId>
     <artifactId>parent-platform</artifactId>
-    <version>7.4-8</version>
+    <version>8.3</version>
   </parent>
   <groupId>com.xwiki.parent</groupId>
   <artifactId>xwikisas-parent-platform</artifactId>
@@ -35,14 +35,14 @@
   <description>XWiki SAS public extension which depends on xwiki-platform</description>
 
   <properties>
-  <!-- Disable Nexus plugin -->
-  <xwiki.nexus.skipStaging>true</xwiki.nexus.skipStaging>
-  <xwikisas.public.store.releases.id>public-store-releases</xwikisas.public.store.releases.id>
-  <xwikisas.public.store.releases.name>XWiki SAS Public Store Repository for Releases</xwikisas.public.store.releases.name>
-  <xwikisas.public.store.releases.url>https://nexus.xwiki.com/nexus/content/repositories/public-store-releases/</xwikisas.public.store.releases.url>
-  <xwikisas.public.store.snapshots.id>public-store-snapshots</xwikisas.public.store.snapshots.id>
-  <xwikisas.public.store.snapshots.name>XWiki SAS Public Store Repository for Snapshots</xwikisas.public.store.snapshots.name>
-  <xwikisas.public.store.snapshots.url>https://nexus.xwiki.com/nexus/content/repositories/public-store-snapshots/</xwikisas.public.store.snapshots.url>
+    <!-- Disable Nexus plugin -->
+    <xwiki.nexus.skipStaging>true</xwiki.nexus.skipStaging>
+    <xwikisas.public.store.releases.id>public-store-releases</xwikisas.public.store.releases.id>
+    <xwikisas.public.store.releases.name>XWiki SAS Public Store Repository for Releases</xwikisas.public.store.releases.name>
+    <xwikisas.public.store.releases.url>https://nexus.xwiki.com/nexus/content/repositories/public-store-releases/</xwikisas.public.store.releases.url>
+    <xwikisas.public.store.snapshots.id>public-store-snapshots</xwikisas.public.store.snapshots.id>
+    <xwikisas.public.store.snapshots.name>XWiki SAS Public Store Repository for Snapshots</xwikisas.public.store.snapshots.name>
+    <xwikisas.public.store.snapshots.url>https://nexus.xwiki.com/nexus/content/repositories/public-store-snapshots/</xwikisas.public.store.snapshots.url>
   </properties>
 
   <!-- All the extensions using this parent should have XWiki SAS as its only developer -->
