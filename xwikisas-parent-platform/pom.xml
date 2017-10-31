@@ -43,11 +43,6 @@
     <xwikisas.public.store.snapshots.id>public-store-snapshots</xwikisas.public.store.snapshots.id>
     <xwikisas.public.store.snapshots.name>XWiki SAS Public Store Repository for Snapshots</xwikisas.public.store.snapshots.name>
     <xwikisas.public.store.snapshots.url>https://nexus.xwiki.com/nexus/content/repositories/public-store-snapshots/</xwikisas.public.store.snapshots.url>
-
-    <!-- Enable auto release on jira -->
-    <xwiki.release.jira.skip>false</xwiki.release.jira.skip>
-    <xwiki.release.jira.settingsKey>jira.xwikisas.com</xwiki.release.jira.settingsKey>
-    <xwiki.issueManagement.url>https://${xwiki.release.jira.settingsKey}/browse/${xwiki.issueManagement.jira.id}</xwiki.issueManagement.url>
   </properties>
 
   <!-- All the extensions using this parent should have XWiki SAS as its only developer -->
