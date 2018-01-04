@@ -12,7 +12,7 @@ For extensions having xwiki-platform dependencies:
   <parent>
     <groupId>com.xwiki.parent</groupId>
     <artifactId>xwikisas-parent-platform</artifactId>
-    <version>9.11-1</version>
+    <version>8.4.5</version>
   </parent>
 ```
 
