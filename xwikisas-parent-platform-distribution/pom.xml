@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ * See the NOTICE file distributed with this work for additional
+ * information regarding copyright ownership.
+ *
+ * This is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU Lesser General Public License as
+ * published by the Free Software Foundation; either version 2.1 of
+ * the License, or (at your option) any later version.
+ *
+ * This software is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this software; if not, write to the Free
+ * Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
+ * 02110-1301 USA, or see the FSF site: http://www.fsf.org.
+-->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.xwiki.contrib</groupId>
+    <artifactId>parent-platform-distribution</artifactId>
+    <version>10.0</version>
+  </parent>
+  <groupId>com.xwiki.parent</groupId>
+  <artifactId>xwikisas-parent-platform-distribution</artifactId>
+  <version>9.11-1</version>
+  <name>XWiki SAS Extension</name>
+  <packaging>pom</packaging>
+  <description>XWiki SAS public extension which depends on xwiki-platform-distribution</description>
+
+  <properties>
+    <!-- Disable Nexus plugin -->
+    <xwiki.nexus.skipStaging>true</xwiki.nexus.skipStaging>
+    <xwikisas.public.store.releases.id>public-store-releases</xwikisas.public.store.releases.id>
+    <xwikisas.public.store.releases.name>XWiki SAS Public Store Repository for Releases</xwikisas.public.store.releases.name>
+    <xwikisas.public.store.releases.url>https://nexus.xwiki.com/nexus/content/repositories/public-store-releases/</xwikisas.public.store.releases.url>
+    <xwikisas.public.store.snapshots.id>public-store-snapshots</xwikisas.public.store.snapshots.id>
+    <xwikisas.public.store.snapshots.name>XWiki SAS Public Store Repository for Snapshots</xwikisas.public.store.snapshots.name>
+    <xwikisas.public.store.snapshots.url>https://nexus.xwiki.com/nexus/content/repositories/public-store-snapshots/</xwikisas.public.store.snapshots.url>
+
+    <!-- Enable auto release on jira -->
+    <xwiki.release.jira.skip>false</xwiki.release.jira.skip>
+    <xwiki.release.jira.settingsKey>jira.xwikisas.com</xwiki.release.jira.settingsKey>
+    <xwiki.issueManagement.url>https://${xwiki.release.jira.settingsKey}/browse/${xwiki.issueManagement.jira.id}</xwiki.issueManagement.url>
+  </properties>
+
+  <!-- All the extensions using this parent should have XWiki SAS as its only developer -->
+  <developers>
+    <developer>
+      <id>xwikisas</id>
+      <name>XWiki SAS</name>
+      <url>http://xwiki.com</url>
+    </developer>
+  </developers>
+
+   <!-- All the extensions using this parent should have XWiki SAS as its organization -->
+  <organization>
+    <name>XWiki SAS</name>
+    <url>http://xwiki.com/</url>
+  </organization>
+
+  <!-- Standard Maven plugin for XWiki SAS public extensions -->
+  <distributionManagement>
+    <repository>
+      <id>${xwikisas.public.store.releases.id}</id>
+      <name>${xwikisas.public.store.releases.name}</name>
+      <url>${xwikisas.public.store.releases.url}</url>
+    </repository>
+    <snapshotRepository>
+      <id>${xwikisas.public.store.snapshots.id}</id>
+      <name>${xwikisas.public.store.snapshots.name}</name>
+      <url>${xwikisas.public.store.snapshots.url}</url>
+    </snapshotRepository>
+  </distributionManagement>
+
+  <repositories>
+    <repository>
+      <id>${xwikisas.public.store.releases.id}</id>
+      <name>${xwikisas.public.store.releases.name}</name>
+      <url>${xwikisas.public.store.releases.url}</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots> 
+    </repository>
+    <repository>
+      <id>${xwikisas.public.store.snapshots.id}</id>
+      <name>${xwikisas.public.store.snapshots.name}</name>
+      <url>${xwikisas.public.store.snapshots.url}</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots> 
+    </repository>
+  </repositories>
+  <pluginRepositories>
+    <pluginRepository>
+      <id>${xwikisas.public.store.releases.id}</id>
+      <name>${xwikisas.public.store.releases.name}</name>
+      <url>${xwikisas.public.store.releases.url}</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </pluginRepository>
+    <pluginRepository>
+      <id>${xwikisas.public.store.snapshots.id}</id>
+      <name>${xwikisas.public.store.snapshots.name}</name>
+      <url>${xwikisas.public.store.snapshots.url}</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </pluginRepository>
+  </pluginRepositories>
+</project>
