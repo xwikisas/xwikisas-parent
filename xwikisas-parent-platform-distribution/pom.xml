@@ -24,15 +24,15 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.xwiki.contrib</groupId>
-    <artifactId>parent-platform</artifactId>
+    <artifactId>parent-platform-distribution</artifactId>
     <version>9.11-2</version>
   </parent>
   <groupId>com.xwiki.parent</groupId>
-  <artifactId>xwikisas-parent-platform</artifactId>
+  <artifactId>xwikisas-parent-platform-distribution</artifactId>
   <version>9.11-1</version>
   <name>XWiki SAS Extension</name>
   <packaging>pom</packaging>
-  <description>XWiki SAS public extension which depends on xwiki-platform</description>
+  <description>XWiki SAS public extension which depends on xwiki-platform-distribution</description>
 
   <properties>
     <!-- Disable Nexus plugin -->
