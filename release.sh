@@ -44,6 +44,7 @@ function set_version_all() {
   echo              "*****************************"
 
   set_version xwikisas-parent-platform
+  set_version xwikisas-parent-platform-distribution
 }
 
 function commit_all() {
@@ -77,6 +78,7 @@ function deploy_all() {
   echo              "*****************************"
 
   deploy_pom xwikisas-parent-platform
+  deploy_pom xwikisas-parent-platform-distribution
 }
 
 # Check version to release

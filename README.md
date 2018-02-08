@@ -4,7 +4,7 @@ Provide various parent pom.xml for XWiki SAS public extensions.
 
 Extensions are automatically released on http://nexus.xwikisas.com if your user have the release right.
 
-# Example
+# Examples
 
 For extensions having xwiki-platform dependencies:
 
@@ -12,7 +12,17 @@ For extensions having xwiki-platform dependencies:
   <parent>
     <groupId>com.xwiki.parent</groupId>
     <artifactId>xwikisas-parent-platform</artifactId>
-    <version>8.4-8</version>
+    <version>8.4-9</version>
+  </parent>
+```
+
+For custom XWiki distributions:
+
+```xml
+  <parent>
+    <groupId>com.xwiki.parent</groupId>
+    <artifactId>xwikisas-parent-platform-distribution</artifactId>
+    <version>8.4-9</version>
   </parent>
 ```
 
