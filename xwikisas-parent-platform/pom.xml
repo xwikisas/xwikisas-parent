@@ -50,6 +50,10 @@
     <xwiki.issueManagement.url>https://${xwiki.release.jira.settingsKey}/browse/${xwiki.issueManagement.jira.id}</xwiki.issueManagement.url>
   </properties>
 
+  <!-- Override this property in order to visit extensions on Store. It allows to have a single URL definition in this top-level
+       POM and still get valid website URLs for all modules. -->
+  <url>https://store.xwiki.com/xwiki/bin/view/Store/Access?featureId=${project.groupId}:${project.artifactId}</url>
+
   <!-- All the extensions using this parent should have XWiki SAS as its only developer -->
   <developers>
     <developer>
