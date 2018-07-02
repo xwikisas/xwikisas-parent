@@ -12,7 +12,7 @@ For extensions having xwiki-platform dependencies:
   <parent>
     <groupId>com.xwiki.parent</groupId>
     <artifactId>xwikisas-parent-platform</artifactId>
-    <version>9.11-3</version>
+    <version>9.11-4</version>
   </parent>
 ```
 
@@ -22,7 +22,7 @@ For custom XWiki distributions:
   <parent>
     <groupId>com.xwiki.parent</groupId>
     <artifactId>xwikisas-parent-platform-distribution</artifactId>
-    <version>9.11-3</version>
+    <version>9.11-4</version>
   </parent>
 ```
 
