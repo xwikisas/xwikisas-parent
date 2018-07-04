@@ -50,7 +50,8 @@
     <xwiki.issueManagement.url>https://${xwiki.release.jira.settingsKey}/browse/${xwiki.issueManagement.jira.id}</xwiki.issueManagement.url>
   </properties>
 
-  <!-- Override this property in order to visit extensions on Store. See https://github.com/xwiki/xwiki-commons/blob/master/pom.xml#L29 -->
+  <!-- Override this property in order to visit extensions on Store.
+       See https://github.com/xwiki/xwiki-commons/blob/xwiki-commons-8.4.6/pom.xml#L29 -->
   <url>https://store.xwiki.com/xwiki/bin/view/Store/Access?featureId=${project.groupId}:${project.artifactId}:::</url>
 
   <!-- All the extensions using this parent should have XWiki SAS as its only developer -->
