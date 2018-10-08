@@ -10,7 +10,7 @@ For extensions having xwiki-platform dependencies:
   <parent>
     <groupId>com.xwiki.parent</groupId>
     <artifactId>xwikisas-parent-platform</artifactId>
-    <version>7.4</version>
+    <version>6.4</version>
   </parent>
 ```
 
