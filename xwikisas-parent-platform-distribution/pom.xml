@@ -43,6 +43,16 @@
     <xwikisas.public.store.snapshots.id>public-store-snapshots</xwikisas.public.store.snapshots.id>
     <xwikisas.public.store.snapshots.name>XWiki SAS Public Store Repository for Snapshots</xwikisas.public.store.snapshots.name>
     <xwikisas.public.store.snapshots.url>https://nexus.xwiki.com/nexus/content/repositories/public-store-snapshots/</xwikisas.public.store.snapshots.url>
+
+    <!-- Disable auto release on Jira -->
+    <xwiki.release.jira.skip>true</xwiki.release.jira.skip>
+
+    <!-- Make it easy to configure XWiki SAS Jira -->
+    <xwiki.release.jira.settingsKey>jira.xwikisas.com</xwiki.release.jira.settingsKey>
+    <xwiki.issueManagement.url>https://${xwiki.release.jira.settingsKey}/browse/${xwiki.issueManagement.jira.id}</xwiki.issueManagement.url>
+
+    <!-- Make sure we don't inherit any project names, like when using a wrong inherited profile -->
+    <xwiki.issueManagement.jira.id />
   </properties>
 
   <!-- Override this property in order to visit extensions on Store.
