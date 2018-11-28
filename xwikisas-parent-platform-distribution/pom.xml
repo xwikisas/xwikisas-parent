@@ -29,7 +29,7 @@
   </parent>
   <groupId>com.xwiki.parent</groupId>
   <artifactId>xwikisas-parent-platform-distribution</artifactId>
-  <version>9.11-4</version>
+  <version>9.11-5</version>
   <name>XWiki SAS Extension</name>
   <packaging>pom</packaging>
   <description>XWiki SAS public extension which depends on xwiki-platform-distribution</description>
