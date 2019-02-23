@@ -25,11 +25,11 @@
   <parent>
     <groupId>org.xwiki.contrib</groupId>
     <artifactId>parent-platform-distribution</artifactId>
-    <version>10.8.2</version>
+    <version>10.11</version>
   </parent>
   <groupId>com.xwiki.parent</groupId>
   <artifactId>xwikisas-parent-platform-distribution</artifactId>
-  <version>10.8.2</version>
+  <version>10.11</version>
   <name>XWiki SAS Extension</name>
   <packaging>pom</packaging>
   <description>XWiki SAS public extension which depends on xwiki-platform-distribution</description>
