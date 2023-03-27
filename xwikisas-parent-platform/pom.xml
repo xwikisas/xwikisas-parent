@@ -140,19 +140,11 @@
     </pluginRepository>
   </pluginRepositories>
   <build>
-    <pluginManagement>
-      <plugins>
-        <plugin>
-          <groupId>org.xwiki.contrib</groupId>
-          <artifactId>managed-dependencies-maven-plugin</artifactId>
-          <version>${managedDependencies.version}</version>
-        </plugin>
-      </plugins>
-    </pluginManagement>
     <plugins>
       <plugin>
         <groupId>org.xwiki.contrib</groupId>
         <artifactId>managed-dependencies-maven-plugin</artifactId>
+        <version>${managedDependencies.version}</version>
         <executions>
           <execution>
             <goals>
