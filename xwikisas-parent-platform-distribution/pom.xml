@@ -53,6 +53,9 @@
 
     <!-- Make sure we don't inherit any project names, like when using a wrong inherited profile -->
     <xwiki.issueManagement.jira.id />
+
+    <!-- Managed Dependencies plugin version -->
+    <managedDependencies.version>1.0</managedDependencies.version>
   </properties>
 
   <!-- Override this property in order to visit extensions on Store.
@@ -136,4 +139,35 @@
       </snapshots>
     </pluginRepository>
   </pluginRepositories>
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.xwiki.contrib</groupId>
+          <artifactId>managed-dependencies-maven-plugin</artifactId>
+          <version>${managedDependencies.version}</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+    <plugins>
+      <plugin>
+        <groupId>org.xwiki.contrib</groupId>
+        <artifactId>managed-dependencies-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <goals>
+              <goal>inject-managed-dependencies</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <!-- The configuration of the enforcer plugin will be inherited from parent POMs, but we need to refer
+      to this plugin here in order to make sure that the inject-managed-dependencies mojo is executed before
+      the enforcer -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-enforcer-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
 </project>
